@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<khm.kaunghtetmyint.burpple.viewitems.ImageInBurppleViewItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_burpple_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/burpple_food"
+        android:scaleType="centerCrop"
+        android:tint="#6F000000"/>
+</khm.kaunghtetmyint.burpple.viewitems.ImageInBurppleViewItem>

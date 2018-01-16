@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Bubble Food</string>
+
+    <string name="burpple_search">"  "Search e.g. Japanese in Orchard</string>
+    <string name="featured">FEATURED</string>
+    <string name="promotions">Promotions</string>
+
+    <string name="latest">LATEST</string>
+    <string name="guides">Burpple Guide</string>
+
+    <string name="new_trending">New &amp;Trending</string>
+    <string name="newly_opened">Newly Opened</string>
+    <string name="trending_venues">Trending Venues</string>
+
+    <string name="sushi_kimura">Sushi Kimura</string>
+    <string name="far_away">Far away</string>
+
+    <string name="nesuto">Nesuto</string>
+    <string name="misato">Misato</string>
+</resources>
