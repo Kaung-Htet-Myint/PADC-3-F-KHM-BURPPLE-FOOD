@@ -11,9 +11,13 @@ import java.util.concurrent.TimeUnit;
 import khm.kaunghtetmyint.burpple.event.LoadedFeaturedEvent;
 import khm.kaunghtetmyint.burpple.event.LoadedGuidesEvent;
 import khm.kaunghtetmyint.burpple.event.LoadedPromotionsEvent;
+import khm.kaunghtetmyint.burpple.event.SuccessLoginEvent;
+import khm.kaunghtetmyint.burpple.event.SuccessRegisterEvent;
 import khm.kaunghtetmyint.burpple.network.responses.GetBurppleFeaturedResponse;
 import khm.kaunghtetmyint.burpple.network.responses.GetBurppleGuidesResponse;
 import khm.kaunghtetmyint.burpple.network.responses.GetBurpplePromotionsResponse;
+import khm.kaunghtetmyint.burpple.network.responses.LoginResponse;
+import khm.kaunghtetmyint.burpple.network.responses.RegisterResponse;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -114,4 +118,46 @@ public class RetrofitDataAgent implements BurppleDataAgent{
             }
         });
     }
+
+    @Override
+    public void loginUser(String phoneNo,String password) {
+        Call<LoginResponse> loginCall = mBurppleApi.LoginUser(phoneNo,password);
+        loginCall.enqueue(new Callback<LoginResponse>() {
+            @Override
+            public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
+                LoginResponse loginResponse = response.body();
+                if(loginResponse != null){
+                    SuccessLoginEvent event = new SuccessLoginEvent(loginResponse.getLoginUser());
+                    EventBus.getDefault().post(event);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<LoginResponse> call, Throwable t) {
+
+            }
+        });
+    }
+
+    @Override
+    public void RegisterUser(String name, String phoneNo, String password) {
+        Call<RegisterResponse> registerCall = mBurppleApi.RegisterUser(name, phoneNo, password);
+        registerCall.enqueue(new Callback<RegisterResponse>() {
+            @Override
+            public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
+                RegisterResponse registerResponse = response.body();
+                if(registerResponse != null){
+                    SuccessRegisterEvent event = new SuccessRegisterEvent(registerResponse.getRegisterUser());
+                    EventBus.getDefault().post(event);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RegisterResponse> call, Throwable t) {
+
+            }
+        });
+    }
+
+
 }

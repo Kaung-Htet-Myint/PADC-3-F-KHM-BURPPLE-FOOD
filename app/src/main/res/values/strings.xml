@@ -17,4 +17,27 @@
 
     <string name="nesuto">Nesuto</string>
     <string name="misato">Misato</string>
+
+    <string name="login_form">Login form</string>
+    <string name="mobile_or_email">Mobile or Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="btn_login">Login</string>
+    <string name="create_new_account">Create a New Account</string>
+    <string name="sign_up_form">Sign up form</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mail_example">Mail@example.com</string>
+    <string name="phone_number">Please enter a phone number</string>
+    <string name="confirm_password">Confirm Password</string>
+    
+    <string name="menu_item_chinese_food">Chinese Food</string>
+    <string name="menu_item_europian_food">Europian Food</string>
+    <string name="menu_item_korean_food">Korean Food</string>
+
+    <string name="login">Login ဝင်ရန်</string>
+    <string name="sign_up">Sign Up ပြုလုပ်ရန်</string>
+    <string name="btn_forgot_password"><i>Password မေ့သညိ </i></string>
+    <string name="btn_register"><i><u>Register ပြုလုပ်ရန် </u></i></string>
 </resources>

@@ -5,8 +5,8 @@ package khm.kaunghtetmyint.burpple.delegates;
  */
 
 public interface BurppleActionDelegates {
-    void onTapMoviesItem();
-    void onTapMovieOverviewButton();
-    void onTapCropButton();
-    void onTapFavoriteButton();
+    void onTapBurppleGuide();
+    void onTapPromotions();
+    void onTapNewAndTrending();
+    void onTapFoodPlaces();
 }

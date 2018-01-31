@@ -56,6 +56,16 @@ public class OKHttpDataAgent implements BurppleDataAgent{
         new LoadBurppleFoodsTask().execute("http://padcmyanmar.com/padc-3/mm-news/apis/v1/getGuides.php","G");
     }
 
+    @Override
+    public void loginUser(String phoneNo,String password) {
+
+    }
+
+    @Override
+    public void RegisterUser(String name, String phoneNo, String password) {
+
+    }
+
 
     private static class LoadBurppleFoodsTask extends AsyncTask<String,Void,String>{
         private String burppleType="";

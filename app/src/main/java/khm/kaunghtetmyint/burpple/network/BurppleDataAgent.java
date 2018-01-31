@@ -8,4 +8,7 @@ public interface BurppleDataAgent {
         void loadBurppleFeatures();
         void loadBurpplePromotions();
         void loadBurppleGuides();
+
+        void loginUser(String phoneNo, String password);
+        void RegisterUser(String name,String phoneNo,String password);
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<khm.kaunghtetmyint.burpple.viewpods.BeforeLoginViewPod
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/drawer_background"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btn_to_sign_up"
+        style="@style/accent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:text="Sign Up ပြုလုပ်ရန်" />
+
+    <Button
+        android:id="@+id/btn_to_login"
+        style="@style/accent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_to_sign_up"
+        android:layout_alignRight="@id/btn_to_sign_up"
+        android:text="@string/login" />
+
+</khm.kaunghtetmyint.burpple.viewpods.BeforeLoginViewPod>
